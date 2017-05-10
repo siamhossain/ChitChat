@@ -1,7 +1,7 @@
 package com.example.siam.chitchatstable20;
 
 public class ImageUpload {
-
+    public String username;
     public String name;
     public String url;
     public String price;
@@ -9,6 +9,9 @@ public class ImageUpload {
     public String description;
     public String namephon;
 
+    public String getUsername() {
+        return username;
+    }
 
     public String getName() {
         return name;
@@ -34,7 +37,8 @@ public class ImageUpload {
         return namephon;
     }
 
-    public ImageUpload(String name, String url, String price, String status, String description, String namephon) {
+    public ImageUpload(String username, String name, String url, String price, String status, String description, String namephon) {
+        this.username = username;
         this.name = name;
         this.url = url;
         this.price = price;

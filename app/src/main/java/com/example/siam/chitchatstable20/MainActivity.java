@@ -113,7 +113,10 @@ public class MainActivity extends AppCompatActivity {
                     dialog.dismiss();
                     //Display success toast msg
                     Toast.makeText(getApplicationContext(), "Image uploaded", Toast.LENGTH_SHORT).show();
-                    ImageUpload imageUpload = new ImageUpload(txtImageName.getText().toString(), taskSnapshot.getDownloadUrl().toString(), price.getText().toString(), status.getText().toString(), description.getText().toString(), NamePhon.getText().toString());
+                    ImageUpload imageUpload = new ImageUpload(UserDetails.username, txtImageName.getText().toString(),
+                                                taskSnapshot.getDownloadUrl().toString(), price.getText().toString(),
+                                                status.getText().toString(), description.getText().toString(),
+                                                NamePhon.getText().toString());
 
                     //Save image info in to firebase database
                     String uploadId = mDatabaseRef.push().getKey();
@@ -150,8 +153,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void btnShowListImage_Click(View v) {
-        Intent i = new Intent(MainActivity.this, ImageListActivity.class);
-        startActivity(i);
-    }
+    //public void btnShowListImage_Click(View v) {
+        //Intent i = new Intent(MainActivity.this, ImageListActivity.class);
+        //startActivity(i);
+    //}
 }

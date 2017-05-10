@@ -52,7 +52,8 @@ public class ImageListAdapter extends ArrayAdapter<ImageUpload> {
         TextView tvUsername = (TextView) v.findViewById(tvuse);
         ImageView img = (ImageView) v.findViewById(R.id.imgView);
 
-        tvUsername.setText("Username : " + UserDetails.username);
+        tvUsername.setText("Seller Name : "+listImage.get(position).getUsername());
+        Glide.with(context).load(listImage.get(position).getUrl()).into(img);
 
         tvName.setText("Product Name : "+listImage.get(position).getName());
         Glide.with(context).load(listImage.get(position).getUrl()).into(img);
@@ -66,7 +67,7 @@ public class ImageListAdapter extends ArrayAdapter<ImageUpload> {
         tvdescription.setText("Description : "+listImage.get(position).getDescription());
         Glide.with(context).load(listImage.get(position).getUrl()).into(img);
 
-        tvnamephon.setText("Name & Phone : "+listImage.get(position).getNamephon());
+        tvnamephon.setText("Phone : "+listImage.get(position).getNamephon());
         Glide.with(context).load(listImage.get(position).getUrl()).into(img);
 
         return v;

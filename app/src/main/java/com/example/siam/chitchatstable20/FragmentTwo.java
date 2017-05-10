@@ -58,7 +58,7 @@ public class FragmentTwo extends Fragment {
         pd.setMessage("Loading...");
         pd.show();
 
-        String url = "https://chitchatv2.firebaseio.com/users.json";
+        String url = "https://chitchatstable20.firebaseio.com/users.json";
 
         StringRequest request = new StringRequest(Request.Method.GET, url, new Response.Listener<String>(){
             @Override

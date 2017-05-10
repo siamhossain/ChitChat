@@ -5,8 +5,8 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:paddingBottom="16dp"
-    android:paddingLeft="64dp"
-    android:paddingRight="64dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
     android:paddingTop="16dp"
     android:orientation="vertical"
     tools:context="com.example.siam.chitchatstable20.Chat">

@@ -39,7 +39,7 @@
             android:layout_height="wrap_content"
             android:background="#00aee5"
             android:layout_margin="20dp"
-            android:text="SALE"
+            android:text="Sell"
             android:textColor="#fff"
             android:id="@+id/btnSale"
             android:layout_centerVertical="true"
